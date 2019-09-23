@@ -111,7 +111,125 @@ body * {
 
 
 /* START: about */
+.about{
+    text-align: center;
+  }
 
+  .aboutDiv{
+    width: 50%;
+    float: left;
+  }
+
+  .about button{
+      padding: 10px;
+      padding-right: 16px;
+      padding-left: 16px;
+      font-weight: 400;
+      font-size: 14px;
+      margin-top: 60px;
+    }
+
+    .video{
+      position: relative;
+      display: flex;
+    }
+
+    .videobackround{
+      position: absolute;
+      background-color: #4e32ac;
+      height: 100%;
+      width: 90%;
+      margin-left: 10%;
+      opacity: 0.3;
+    }
+
+    .video a{
+      border: 1px solid #fff;
+      height: 64px;
+      width: 64px;
+      font-size: 30px;
+      padding: 16px;
+      line-height: 32px;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      cursor: pointer;
+      z-index: 1;
+      font-size: 25px;
+    }
+
+    .video i{
+      color: white;
+    }
+
+    .video i:hover{
+      color: #4e32ac;
+    }
+
+    button:hover {
+        background-color: #4e32ac;
+        color: white;
+        cursor: pointer;
+    }
+
+  .about img{
+    width: 90%;
+    margin-left: 10%;
+  }
+
+  .aboutDiv p{
+    color: #333;
+    margin-top: 12px;
+    font-size: 14px;
+    word-spacing: 4px;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-bottom: 0;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+
+  .main-color{
+    color: #4e32ac;
+  }
+  /* modal css */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 4; /* Sit on top */
+    left: 10%;
+    top: 20%;
+    overflow: auto;
+    /* padding-bottom: 56.25%; /* Enable scroll if needed */ */
+  }
+
+  .close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 /* END: about */
 
 
