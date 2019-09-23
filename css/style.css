@@ -10,10 +10,13 @@ body * {
     display: inline-block;
     width: 1150px;
     margin: 0 calc((100% - 1150px) / 2 );
-
 }
 
-
+section{
+  text-align: center;
+  padding-bottom: 80px;
+  width: 100%;
+}
 
 /* START: main */
 .home-page {
@@ -234,7 +237,27 @@ body * {
 
 
 /* START: services */
+.section.second-bg {
+  background-color: var(--secondary-color);
+  }
 
+  .section.second-bg > .container p {
+      margin-bottom: 40px;
+      color: gray;
+  }
+
+  .service-box {
+      display: inline-block;
+      width: 24%;
+      text-align: center;
+      margin-top :80px;
+      margin-bottom: 80px;
+  }
+
+  .service-box > i {
+      color: #4e32ac;
+      font-size: 35px;
+  }
 /* END: services */
 
 
@@ -256,3 +279,67 @@ body * {
 /* START: footer */
 
 /* END: footer */
+
+      /* fonts css */
+      h2 {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        font-size :32px;
+        margin-bottom: 30px;
+        margin-top: 100px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0;
+    }
+ 
+    h2::after {
+        display: inline-block;
+        content: '';
+        width: 100px;
+        height: 2px;
+        position: absolute;
+        top:50px;
+        left: 46%;
+        background-color: #4e32ac;
+    }
+ 
+     h3 {
+         display: inline-block;
+         text-align: center;
+         width: 100%;
+         position: relative;
+         font-size :20px;
+         margin-bottom: 30px;
+         margin-top:10px;
+         font-weight: bold;
+         text-transform: uppercase;
+     }
+ 
+     h3::after {
+         display: inline-block;
+         content: '';
+         width: 60px;
+         height: 1px;
+         position: absolute;
+         top: 30px;
+         left: 100px;
+         background-color: #4e32ac;
+     }
+ 
+     p{
+       color: #333;
+       font-size: 14px;
+       line-height: 1.8;
+       margin: 0 0 10px;
+       margin-bottom: 60px;
+     }
+ 
+     h4{
+       font-size: 19px;
+       color: #333;
+       font-weight: 700;
+       margin-top: 24px;
+       margin-bottom: 40px;
+     }
