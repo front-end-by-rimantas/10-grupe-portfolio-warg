@@ -1,10 +1,112 @@
-/* START: header */
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+}
 
-/* END: header */
+.container {
+    display: inline-block;
+    width: 1150px;
+    margin: 0 calc((100% - 1150px) / 2 );
+
+}
+
 
 
 /* START: main */
+.home-page {
+    background:url(../img/home-bg.jpg);
+    display: inline-block;
+    width: 100%;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+        .row {
+            position: absolute;
+            display: inline-block;
+            float:left;
+            width: 600px;
+            top:35%;
+            text-align: left;
+           
 
+        
+        }
+        .row > h1 {
+            position: relative;
+            display: inline-block;
+            float: left; 
+            font-size: 40px;
+            text-transform: uppercase;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .row > p {
+            position: relative;
+            display: inline-block;
+            float: left;
+            margin-top:35px;
+            font-size: 16px;
+            line-height: 35px;
+            color: gray;
+            font-family: "Open Sans",sans-serif;
+
+            
+        }
+        .icons {
+            position: relative;
+            display: inline-block;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            width: 100%;
+            float:left;
+            padding-bottom: 20px;
+    
+            
+        }
+        .icons > a {
+            position: relative;
+            color:black;
+
+            display: inline-block;
+            margin: 5px;
+            transition: 0.1s;
+
+            
+        }
+
+        .icons > a > i.fab {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            margin: 5px;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 50%;
+            background-color:#eee;
+            /* border: 0.5px solid black; */
+            line-height: 15px;
+            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
+            
+        }
+
+        .row .fa-facebook-f{
+            padding-right: 14px;
+        }
+        
+        .row .fa-tumblr{
+            padding-right: 14px;
+        }
+        
+        .icons > a:hover > i.fab{
+            transform: translateY(-20%);
+            color: white;
+            background-color: #4e32ac;
+        }
 /* END: main */
 
 
