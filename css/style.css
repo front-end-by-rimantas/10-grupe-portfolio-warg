@@ -361,7 +361,35 @@ section{
 
 
 /* START: contacts */
+form {
+  display: inline-block;
+  width: 65%;
+}
+  form input {
+      display: inline-block;
+      width: calc(50% - 20px);
+      float: left;
+      margin-bottom: 20px;
+      height: 30px;
+      border: 1px solid #ddd;
+  }
 
+  form input:nth-child(2) {
+      margin-left: 40px;
+  }
+
+  form placeholder{
+    margin-left: 15px;
+  }
+
+  form textarea {
+      display: inline-block;
+      min-height: 150px;
+      max-height: 300px;
+      margin-bottom: 60px;
+      min-width: 100%;
+      border: 1px solid #ddd;
+  }
 /* END: contacts */
 
 
@@ -432,3 +460,99 @@ section{
        margin-top: 24px;
        margin-bottom: 40px;
      }
+
+     /* responsive css  */
+
+    @media screen and (max-width: 1000px) {
+      .container {
+          width: 900px;
+          margin: 0 calc( (100% - 900px) / 2 );
+      }
+    iframe {
+      height: 500px;
+      width: 700px;
+    }
+
+    .aboutDiv{
+      width: 100%;
+      float: none;
+    }
+
+    #workdiv{
+      width: 50%;
+    }
+  }
+
+    @media screen and (max-width: 900px) {
+      .container {
+          width: 700px;
+          margin: 0 calc( (100% - 700px) / 2 );
+      }
+    iframe {
+      height: 450px;
+      width: 650px;
+  }
+
+  form {
+      width: 100%;
+  }
+
+      form input {
+          float: none;
+          width: 100%;
+      }
+
+      form input:nth-child(2) {
+          margin-left: 0px;
+      }
+
+      .btn{
+        margin-bottom: 15px;
+      }
+
+    @media screen and (max-width: 800px) {
+      .container {
+          width: 600px;
+          margin: 0 calc( (100% - 600px) / 2 );
+      }
+    iframe {
+      height: 400px;
+      width: 600px;
+  }
+
+  #workdiv{
+    width: 100%;
+    float: none;
+    display: block;
+  }
+}
+
+  @media screen and (max-width: 700px) {
+    .container {
+        width: 500px;
+        margin: 0 calc( (100% - 500px) / 2 );
+    }
+  iframe {
+    height: 300px;
+    width: 450px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .container {
+        width: 400px;
+        margin: 0 calc( (100% - 400px) / 2 );
+    }
+  iframe {
+    height: 250px;
+    width: 300px;
+  }
+
+  @media screen and (max-width: 400px) {
+    .container {
+        width: calc(100% - 40px);
+        margin: 0 20px;
+    }
+  iframe {
+    height: 200px;
+    width: 250px;
+  }
