@@ -394,7 +394,86 @@ form {
 
 
 /* START: footer */
+footer {
+  text-align: center;
+}
 
+footer > .footer-top{
+  display: inline-block;
+  float: left;
+  width: 100%;
+  padding: 20px;
+  background-color: #272727;
+}
+
+  .icons-footer {
+      display: inline-block;
+      float: left;
+      width: 100%;
+  }
+
+  .icons-footer > a {
+      display: inline-block;
+      margin-top: 20px;
+      transition: 0.1s;
+  }
+  .icons-footer > a > i {
+      display: inline-block;
+      text-align: center;
+      margin: 6px;
+      color: white;
+      padding: 15px;
+      font-size: 20px;
+      border-radius: 50%;
+      background-color: #4e32ac;
+      box-shadow: 2px 2px 14px rgba(0, 0, 0, 1);
+  }
+  
+  .icons-footer > a:hover > i.fab {
+      transform: translateY(-20%);
+      color: #4e32ac;
+      background-color: white;
+  }
+
+  .icons-footer .fa-facebook-f{
+      padding-right: 18px;
+  }
+  
+  .icons-footer .fa-tumblr{
+      padding-right: 18px;
+  }
+
+  .footer-nav {
+      display: inline-block;
+      word-spacing: 20px;
+  
+  }
+
+  .container > .footer-nav > a {
+      display: inline-block;
+      padding-top: 50px;
+      color: #c7c7c7;
+      font-size: 14px;
+      font-weight: 700;
+      margin: 5px;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding-bottom: 20px;
+  }
+  
+  footer > .footer-bot {
+      display: inline-block;
+      float: left;
+      width: 100%;
+      padding: 20px;
+      background-color: #4e32ac;
+  }
+  
+  footer > .footer-bot .container > p {
+      color: white;
+      text-transform: uppercase;
+      word-spacing: 2px;
+  }
 /* END: footer */
 
       /* fonts css */
