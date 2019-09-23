@@ -1,0 +1,49 @@
+header {
+    position: fixed;
+    
+    
+}
+.header {
+    display: inline-block;
+    width: 100%;
+    margin-top:20px;
+    z-index: 1;
+}
+
+
+.logo {
+    display: inline-block;
+    float: left;
+    width: 49%;
+    position: relative;
+
+}
+
+.header-nav {
+    display: inline-block;
+    float: right;
+    width: 49%;
+}
+nav {
+    display: inline-block;
+    float: right;
+    
+
+}
+
+nav > a {
+    background-color:#fafafa;
+    /* padding:10px; */
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4)
+}
+
+nav > a > i {
+        text-decoration: none;
+        padding: 15px;
+        color: black;
+        position: relative;
+        font-size: 20px;
+        text-align: center;
+}
