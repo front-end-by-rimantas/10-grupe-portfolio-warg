@@ -5,6 +5,9 @@ body * {
     vertical-align: top;
     box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .container {
     display: inline-block;
