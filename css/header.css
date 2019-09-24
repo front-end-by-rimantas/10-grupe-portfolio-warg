@@ -1,4 +1,6 @@
 header {
+    display: inline-block;
+    float: left;
     position: fixed;
     
     
@@ -14,26 +16,27 @@ header {
 .logo {
     display: inline-block;
     float: left;
-    width: 49%;
+    width: 10%;
     position: relative;
 
 }
 
 .header-nav {
     display: inline-block;
+    position: relative;
     float: right;
     width: 49%;
 }
 nav {
     display: inline-block;
+    width: 9%;
     float: right;
     
 
 }
 
 nav > a {
-    background-color:#fafafa;
-    /* padding:10px; */
+    background-color:#fafafa; 
     border-radius: 50%;
     position: absolute;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4)
@@ -47,3 +50,4 @@ nav > a > i {
         font-size: 20px;
         text-align: center;
 }
+
