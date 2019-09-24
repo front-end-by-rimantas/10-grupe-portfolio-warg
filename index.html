@@ -4,26 +4,215 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/button.css">
-    <link rel="stylesheet" href="./css/form.css">
-    <link rel="stylesheet" href="./css/gallery.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css">
+<<<<<<< Updated upstream
+=======
+    
+>>>>>>> Stashed changes
+    <title>Portfolio</title>
 </head>
 <body>
-    <header>
-        HEADER
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+             <a href="#">
+                 <img src="./img/logo.png"  alt="logo">
+             </a>
+            </div>
+            <div class="header-nav">
+                <nav>
+                    <a href="#"><i class="fas fa-bars"></i> </a>
+                </nav>
+            </div>
+        </div>
     </header>
 
-    <div>
-        HERO
-    </div>
+    <main id="home" class="home-page">
+        <div id="container"class="container">
+           <div class="row">
+            <h1>Karolis Paskevicius</h1>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing
+                 elit. Veritatis autem nobis totama lomato agregato
+                </p>
+                 <div class="icons">
+                 <a href="#"><i class="fab fa-facebook-f"></i></a>
+                 <a href="#"><i class="fab fa-twitter"></i></a>
+                 <a href="#"><i class="fab fa-dribbble"></i></a>
+                 <a href="#"><i class="fab fa-tumblr"></i></a>
+                 <a href="#"><i class="fab fa-instagram"></i></a>
+                 </div>
+                 <button type="button" id="bnt" class="btn">About me</button>
+                 <button type="button" id="bnt" class="btn">hire me</button>
+            </div>
+        </div>
+    </main>
 
-    <div>
-        CLIENTS LOGO LIST
-    </div>
+    <section id="about" class="about">
+        <div id="container" class="container">
+            <h2>About me</h2>
+            <p>Anim pariatur cliche sodales reprehenderit, wolf moon officia,<br>non cupidatat skateboard dolor brunch.</p>
+            <div class="aboutDiv video"><a id="videobtn"class="btn"><span class="main-color"><i class="i fa fa-play"></i></span></a><img src="img/about.jpg" alt="">
+              <div class="videobackround"></div>
+              <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <iframe width="850" height="450" src="https://www.youtube.com/embed/LHvYrn3FAgI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="aboutDiv">
+                <h4>PERSONAL INFORMATION</h4>
+                <p><span class="main-color">name:</span>Jason doe</p>
+                <p><span class="main-color">age: </span>22 years</p>
+                <p><span class="main-color">job: </span>web designer</p>
+                <p><span class="main-color">phone: </span>+ 999 999 999</p>
+                <p><span class="main-color">Address: </span>Los Angeles, USA</p>
+                <p><span class="main-color">email: </span>yourmail@domain.com</p>
+                <p><span class="main-color">Freelance </span>Available</p>
+                <button type="button" name="button">Learn more</button>
+                <button type="button" name="button">Get in touch</button>
+            </div>
+          </div>
+          <script src="js/modal.js"></script>
+    </section>
 
+    <section id="services" class="section second-bg">
+            <div class="container">
+                    <h2>Services</h2>
+                    <p>Anim pariatur cliche sodales reprehenderit, wolf moon officia,<br />
+                            non cupidatat skateboard dolor brunch</p> 
+            </div>
+                <div id="service-make" class="container">
+                    <!-- <div class="service-box">
+                        <i class="fas fa-laptop"></i>
+                        <h3> Website Design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="service-box">
+                        <i class="fas fa-mobile-alt"></i>
+                            <h3> App Development</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="service-box">
+                        <i class="far fa-image"></i>
+                            <h3> Graphic design</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+    
+                    <div class="service-box">
+                        <i class="fas fa-chart-line"></i>
+                        <h3> Seo Marketing</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div> -->
+                </div>
+
+   </section>
+
+   <section id="work" class="work">
+    <div id="works" class="container">
+        <div id="myBtnContainer">
+          <h2>MY WORK</h2>
+          <p>Anim pariatur cliche sodales reprehenderit, wolf moon officia,<br>non cupidatat skateboard dolor brunch.</p>
+            <button class="btn active" onclick="filterSelection('all')">ALL</button>
+            <button class="btn" onclick="filterSelection('WEB')"> WEB</button>
+            <button class="btn" onclick="filterSelection('DESIGN')"> DESIGN</button>
+            <button class="btn" onclick="filterSelection('FOTOGRAPHY')"> FOTOGRAPHY</button>
+            <button class="btn" onclick="filterSelection('MUSIC')"> MUSIC</button>
+           </div>
+          <br>
+          <br>
+          <br>
+          <script src="js/gallery.js"></script>
+        </div>
+   </section>
+
+   <section id="my-blogs" class="section second-bg">
+        <div class="container">
+            <h2>My blogs</h2>
+            <p>Anim pariatur cliche sodales reprehenderit, wolf moon officia,<br />
+                    non cupidatat skateboard dolor brunch.</p>
+        <div class="blog-row">
+            <img src="./img/blog-1.jpg" alt="blog1">
+            <h4>Designed for everyone, Everywhere</h4>
+            <p>Lorem ipsum dolor sit amet eiusmod, do tempo commodo bibendumr incid idunt ut labore ...</p>
+        </div>
+        <div class="blog-row">
+            <img src="./img/blog-2.jpg" alt="blog2">
+            <h4>Don't Just Be a Designer, Be a Good One</h4>
+            <p>Lorem ipsum dolor sit amet eiusmod, do tempo commodo bibendumr incid idunt ut labore ...</p>
+        </div>
+        <div class="blog-row">
+            <img src="./img/blog-3.jpg" alt="blog3">
+            <h4>Creative and Innovative Navigations Desings</h4>
+        <p>Lorem ipsum dolor sit amet eiusmod, do tempo commodo bibendumr incid idunt ut labore ...</p>
+        </div>
+        <div class="blog-row">
+                <img src="./img/blog-1.jpg" alt="blog1">
+                <h4>Designed for everyone, Everywhere</h4>
+                <p>Lorem ipsum dolor sit amet eiusmod, do tempo commodo bibendumr incid idunt ut labore ...</p>
+            </div>
+            <div class="blog-row">
+                <img src="./img/blog-2.jpg" alt="blog2">
+                <h4>Don't Just Be a Designer, Be a Good One</h4>
+                <p>Lorem ipsum dolor sit amet eiusmod, do tempo commodo bibendumr incid idunt ut labore ...</p>
+            </div>
+            <div class="blog-row">
+                <img src="./img/blog-3.jpg" alt="blog3">
+                <h4>Creative and Innovative Navigations Desings</h4>
+            <p>Lorem ipsum dolor sit amet eiusmod, do tempo commodo bibendumr incid idunt ut labore ...</p>
+            </div>
+            <br />
+
+        <button class="btn blog-btn" id="bnt">View More</button>
+    </div>
+   </section>
+
+   <section id="contacts" class="contacts">
+    <div class="container">
+        <h2>contact</h2>
+        <p>Anim pariatur cliche sodales reprehenderit, wolf moon officia,<br>non cupidatat skateboard dolor brunch.</p>
+        <form>
+            <input placeholder="Name" value="">
+            <input placeholder="Email" value="">
+            <textarea placeholder="Message"></textarea>
+            <button>SEND MESSAGE</button>
+        </form>
+        </div>
+   </section>
+
+   <footer>
+    <div class="footer-top">
+        <div class="container">
+            <div class="icons-footer">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-tumblr"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a> 
+                <a href="#" class="fas fa-chevron-up"></a>
+            </div>
+        <div class="footer-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#work">Work</a>
+            <a href="#my-blogs">Blogs</a>
+        </div>
+     </div>
+</div>
+
+<div class="footer-bot">
+    <div class="container">
+        <p>KV &copy 2019. all right reserved</p>
+    </div>
+</div>
+   </footer>
 
 
     <script src="./js/data.js"></script>
