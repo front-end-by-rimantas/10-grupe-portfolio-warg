@@ -12,6 +12,17 @@ button {
     text-transform: uppercase;
     cursor: pointer;
 }
+.btn {
+  width: 150px;
+  height: 35px;
+  border: 2px solid #4e32ac;
+
+}
+
+.btn {
+  width: 150px;
+  height: 35px;
+}
 
 .btn {
   width: 150px;
@@ -36,7 +47,7 @@ button {
   font-weight: 700;
   font-size: 14px;
   background-color: white;
-  border: 1px solid #4e32ac;
+  border: 2px solid #4e32ac;
 }
 
 .work button:hover {
