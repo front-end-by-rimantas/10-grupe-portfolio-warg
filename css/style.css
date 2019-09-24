@@ -336,11 +336,15 @@ section{
 .blog-row {
   display: inline-block;
   width: 30%;
-  /* float: left; */
-  margin: 15px;
+  height: 420px;
+  /* margin-bottom: 15px; */
+  margin-right: 5px;
+  margin-bottom: 10px;
   background-color: #fff;
   box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.3);
 }   
+
+
 
 .blog-row > img {
   object-fit: contain;
@@ -351,15 +355,18 @@ section{
 .section.second-bg > .container > .blog-row h4 {
   font-size: 25px;
   text-align: left;
-  padding: 10px;
+  margin:15px;
 }
 
 .section.second-bg > .container > .blog-row p {
-  margin-bottom: 40px;
   color:#000;
-  padding: 10px;
+  margin:15px;
   text-align: left;
 }
+.blog-btn {
+  margin-top:20px;
+}
+
 /* END: my-blogs */
 
 
@@ -516,8 +523,8 @@ footer > .footer-top{
         width: 100px;
         height: 2px;
         position: absolute;
-        top:50px;
-        left: 46%;
+        left: calc((100% - 100px) / 2);
+        bottom: calc((100% - 60px) / 2);
         background-color: #4e32ac;
     }
  
@@ -539,8 +546,8 @@ footer > .footer-top{
          width: 60px;
          height: 1px;
          position: absolute;
-         top: 30px;
-         left: 100px;
+         left: calc((100% - 60px) / 2);
+         bottom: calc((100% - 60px) / 2);
          background-color: #4e32ac;
      }
  
@@ -562,7 +569,14 @@ footer > .footer-top{
 
      /* responsive css  */
 
-    @media screen and (max-width: 1000px) {
+     @media screen and (max-width: 1300px) {
+      .container {
+          width: 1000px;
+          margin: 0 calc( (100% - 1000px) / 2 );
+      }
+    }
+
+    @media screen and (max-width: 1100px) {
       .container {
           width: 900px;
           margin: 0 calc( (100% - 900px) / 2 );
@@ -580,13 +594,34 @@ footer > .footer-top{
     #workdiv{
       width: 50%;
     }
+    .blog-row {
+      display: inline-block;
+      width: 25%;
+      margin-bottom: 1px;
+      margin-left:20px;
+    }
   }
 
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 1000px) {
       .container {
           width: 700px;
           margin: 0 calc( (100% - 700px) / 2 );
       }
+      .service-box {
+        width: 50%;
+        margin: 0 calc( (100% - 700px) / 2 );
+
+      }
+      .blog-row {
+        display: inline-block;
+        width: 40%;
+        margin-right: 5px;
+        margin-bottom: 40px;
+      }
+      .blog-btn {
+        margin-top:20px;
+      }
+    }
     iframe {
       height: 450px;
       width: 650px;
@@ -624,6 +659,16 @@ footer > .footer-top{
     float: none;
     display: block;
   }
+  .service-box {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+  .blog-row {
+    display: inline-block;
+    width: 45%;
+    margin-right: 5px;
+  }
 }
 
   @media screen and (max-width: 700px) {
@@ -635,6 +680,15 @@ footer > .footer-top{
     height: 300px;
     width: 450px;
   }
+  .row {
+    width: 500px;
+  }
+  .blog-row {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 480px;
+  }
+}
 
   @media screen and (max-width: 600px) {
     .container {
@@ -645,6 +699,10 @@ footer > .footer-top{
     height: 250px;
     width: 300px;
   }
+  .row {
+    width: 300px;
+  }
+}
 
   @media screen and (max-width: 400px) {
     .container {
@@ -655,3 +713,4 @@ footer > .footer-top{
     height: 200px;
     width: 250px;
   }
+}
