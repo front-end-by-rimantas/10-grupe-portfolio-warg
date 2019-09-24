@@ -405,7 +405,6 @@ footer > .footer-top{
   display: inline-block;
   float: left;
   width: 100%;
-  padding: 20px;
   background-color: #272727;
 }
 
@@ -421,6 +420,7 @@ footer > .footer-top{
       transition: 0.1s;
   }
   .icons-footer > a > i {
+    position: relative;
       display: inline-block;
       text-align: center;
       margin: 6px;
@@ -446,6 +446,21 @@ footer > .footer-top{
       padding-right: 18px;
   }
 
+  .icons-footer > .fa-chevron-up {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size:20px;
+    text-decoration: none;
+    right: 60px;
+    color:white;
+    border-radius: 50%;
+    background-color: #4e32ac;
+    box-shadow: 2px 2px 14px rgba(0, 0, 0, 1);
+
+  }
+
   .footer-nav {
       display: inline-block;
       word-spacing: 20px;
@@ -466,9 +481,9 @@ footer > .footer-top{
   
   footer > .footer-bot {
       display: inline-block;
+      text-align: center;
       float: left;
       width: 100%;
-      padding: 20px;
       background-color: #4e32ac;
   }
   
@@ -476,7 +491,9 @@ footer > .footer-top{
       color: white;
       text-transform: uppercase;
       word-spacing: 2px;
-  }
+      margin-top: 20px;
+      margin-bottom: 10px; 
+     }
 /* END: footer */
 
       /* fonts css */
