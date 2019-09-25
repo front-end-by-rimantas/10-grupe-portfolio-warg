@@ -2,52 +2,70 @@ header {
     display: inline-block;
     float: left;
     position: fixed;
-    
-    
-}
-.header {
-    display: inline-block;
     width: 100%;
-    margin-top:20px;
+    padding-top:20px;
     z-index: 1;
 }
+    .header {
+        padding-top: 20px;
+    }
+    .logo {
+        display: inline-block;
+        float: left;
+        position: relative;
+        z-index: 15;
 
+    }
+    .top-button {
+        float: right;
+        border: none;
+        box-shadow: 1px 4px 14px rgba(0,0,0, 0.5);
+        z-index: 15;
+        position: relative;
+    }
+    .top-button:hover{
+        background-color:white;
+        border: none;
+        color:white;
+        cursor: pointer;
 
-.logo {
-    display: inline-block;
-    float: left;
-    width: 10%;
-    position: relative;
+    }
+    button > i {
+            text-decoration: none;
+            float: right;
+            padding: 15px;
+            color: black;
+            position: relative;
+            font-size: 20px;
+            text-align: center;
+            background-color: none;   
+    }
 
-}
-
-.header-nav {
-    display: inline-block;
-    position: relative;
-    float: right;
-    width: 49%;
-}
-nav {
-    display: inline-block;
-    width: 9%;
-    float: right;
+.hide-div {
+        display: none;
+    }
+    .show {
+        padding-top:150px;
+        display: inline-block;
+        width: 100%;
+        height: 100vh;
+        line-height: 80px;
+        font-size: 50px;
+        background: #4e32ac;
+        opacity: 0.5;
+        top:0;
+        position: absolute;
+    }
+    nav {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+    }
+    .show  a {
+        color:white;
+        text-decoration: none;
+    }
     
 
-}
-
-nav > a {
-    background-color:#fafafa; 
-    border-radius: 50%;
-    position: absolute;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.4)
-}
-
-nav > a > i {
-        text-decoration: none;
-        padding: 15px;
-        color: black;
-        position: relative;
-        font-size: 20px;
-        text-align: center;
-}
 
