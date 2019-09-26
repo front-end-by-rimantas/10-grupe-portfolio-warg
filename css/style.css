@@ -112,6 +112,7 @@ section{
             transform: translateY(-20%);
             color: white;
             background-color: #4e32ac;
+            transition: 1s;
         }
 /* END: main */
 
@@ -325,7 +326,7 @@ section{
 .filterDiv{
   display: none;
 }
-.show {
+.gallerya {
   display: block;
 }
 
@@ -375,6 +376,11 @@ form {
   display: inline-block;
   width: 65%;
 }
+.form-container {
+  width: 60%;
+  margin-left:20%;
+}
+
   form input {
       display: inline-block;
       width: calc(50% - 20px);
@@ -416,6 +422,7 @@ footer > .footer-top{
 }
 
   .icons-footer {
+    position: relative;
       display: inline-block;
       float: left;
       width: 100%;
@@ -443,6 +450,7 @@ footer > .footer-top{
       transform: translateY(-20%);
       color: #4e32ac;
       background-color: white;
+      transition: 1s;
   }
 
   .icons-footer .fa-facebook-f{
@@ -657,7 +665,6 @@ footer > .footer-top{
   #workdiv{
     width: 100%;
     float: none;
-    display: block;
   }
   .service-box {
     display: block;
@@ -668,6 +675,10 @@ footer > .footer-top{
     display: inline-block;
     width: 45%;
     margin-right: 5px;
+  }
+  .btn {
+    float:none;
+    width: 50%;
   }
 }
 
@@ -701,6 +712,15 @@ footer > .footer-top{
   }
   .row {
     width: 300px;
+  }
+  .footer-nav {
+    word-spacing: 0;
+  }
+  .icons-footer > .fa-chevron-up {
+    margin-top: -30px;
+  }
+  .blog-row {
+    width: 90%;
   }
 }
 

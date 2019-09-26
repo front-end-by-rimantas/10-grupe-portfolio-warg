@@ -8,6 +8,7 @@ header {
 }
     .header {
         padding-top: 20px;
+        
     }
     .logo {
         display: inline-block;
@@ -40,7 +41,6 @@ header {
             text-align: center;
             background-color: none;   
     }
-
 .hide-div {
         display: none;
     }
@@ -52,9 +52,29 @@ header {
         line-height: 80px;
         font-size: 50px;
         background: #4e32ac;
-        opacity: 0.5;
+        opacity: .9;
         top:0;
+        left:0;
         position: absolute;
+        animation-name: hover;
+        animation-duration: 0.7s;
+
+    }
+    @keyframes hover {
+        0% {
+            left:100%;
+            border-bottom-left-radius: 100%;
+        }
+        50%{
+        
+            
+            border-bottom-left-radius: 100%;
+        }
+        100% {
+            
+            left:0%;
+            border-end-end-radius: 95%;
+        }
     }
     nav {
         display: inline-block;
