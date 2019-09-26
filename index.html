@@ -17,39 +17,24 @@
 <body>
     <header class="header">
         <div class="container">
+                <div class="hide-div" id="changetoDiv">
+                        <nav>
+                        <ul><a href="#home" class="hideHome">Home</a></ul>
+                        <ul><a href="#about" class="hideAbout" >About me</a></ul>
+                        <ul><a href="#services" class="hideServices">Services</a></ul>
+                        <ul><a href="#work" class="hideWork">Work</a></ul>
+                        <ul><a href="#my-blogs"class="hideBlogs">Blog</a></ul>
+                        <ul><a href="#contacts"class="hideContacts">Contact me</a></ul>
+                        </nav>
+                    </div>
+               
             <div class="logo">
              <a href="#">
                  <img src="./img/logo.png"  alt="logo">
              </a>
             </div>
-            <button class="top-button" onclick="changeNav()"> <i class="fas fa-bars"></i> </button>
-            
+            <button class="top-button" onclick="changeNav()"> <i class="fas fa-bars"></i> </button>   
         </div>
-        <div class="hide-div" id="changetoDiv">
-
-                <nav>
-                <ul><a href="#home">Home</a></ul>
-                <ul><a href="#about">About me</a></ul>
-                <ul><a href="#services">Services</a></ul>
-                <ul><a href="#work">Work</a></ul>
-                <ul><a href="#my-blogs">Blog</a></ul>
-                <ul><a href="#contacts">Contact me</a></ul>
-                </nav>
-            </div>
-            <script>
-                function changeNav() {
-                    var element = document.getElementById('changetoDiv');
-                    element.classList.toggle("show");
-         
-                }
-            </script>
-            <script>
-            function changeNav() {
-                var element = document.getElementById('changetoDiv');
-                element.classList.toggle("show");
-     
-            }
-        </script>
     </header>
 
     <main id="home" class="home-page">
@@ -107,30 +92,7 @@
                     <p>Anim pariatur cliche sodales reprehenderit, wolf moon officia,<br />
                             non cupidatat skateboard dolor brunch</p> 
             </div>
-                <div id="service-make" class="container">
-                    <!-- <div class="service-box">
-                        <i class="fas fa-laptop"></i>
-                        <h3> Website Design</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="service-box">
-                        <i class="fas fa-mobile-alt"></i>
-                            <h3> App Development</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="service-box">
-                        <i class="far fa-image"></i>
-                            <h3> Graphic design</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-    
-                    <div class="service-box">
-                        <i class="fas fa-chart-line"></i>
-                        <h3> Seo Marketing</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div> -->
-                </div>
-
+                <div id="service-make" class="container"></div>
    </section>
 
    <section id="work" class="work">
@@ -187,7 +149,6 @@
             <p>Lorem ipsum dolor sit amet eiusmod, do tempo commodo bibendumr incid idunt ut labore ...</p>
             </div>
             <br />
-
         <button class="btn blog-btn" id="bnt">View More</button>
     </div>
    </section>
@@ -196,13 +157,15 @@
     <div class="container">
         <h2>contact</h2>
         <p>Anim pariatur cliche sodales reprehenderit, wolf moon officia,<br>non cupidatat skateboard dolor brunch.</p>
-        <form>
-            <input placeholder="Name" value="">
-            <input placeholder="Email" value="">
-            <textarea placeholder="Message"></textarea>
-            <button>SEND MESSAGE</button>
-        </form>
+        <div class="form-container">
+            <form>
+                <input placeholder="Name" value="">
+                <input placeholder="Email" value="">
+                <textarea placeholder="Message"></textarea>
+                <button>SEND MESSAGE</button>
+            </form>
         </div>
+    </div>
    </section>
 
    <footer>
@@ -232,7 +195,7 @@
 </div>
    </footer>
   
-
+    <script src="./js/nav.js"></script>
     <script src="./js/data.js"></script>
     <script src="./js/functions.js"></script>
     <script src="./js/actions.js"></script>

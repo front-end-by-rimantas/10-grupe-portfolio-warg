@@ -8,6 +8,7 @@ header {
 }
     .header {
         padding-top: 20px;
+        
     }
     .logo {
         display: inline-block;
@@ -53,6 +54,7 @@ header {
         background: #4e32ac;
         opacity: .9;
         top:0;
+        left:0;
         position: absolute;
         animation-name: hover;
         animation-duration: 0.7s;
