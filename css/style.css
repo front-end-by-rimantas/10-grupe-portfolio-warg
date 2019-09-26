@@ -703,7 +703,7 @@ footer > .footer-top{
 
   @media screen and (max-width: 600px) {
     .container {
-        width: 400px;
+        width: 384px;
         margin: 0 calc( (100% - 400px) / 2 );
     }
   iframe {
@@ -721,6 +721,9 @@ footer > .footer-top{
   }
   .blog-row {
     width: 90%;
+  }
+  .row p {
+    margin-bottom: 0;
   }
 }
 
