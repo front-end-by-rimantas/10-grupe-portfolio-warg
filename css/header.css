@@ -85,6 +85,10 @@ header {
     .show  a {
         color:white;
         text-decoration: none;
+        display: block;
+        text-transform: uppercase;
+        margin-top:20px;
+        
     }
     
 

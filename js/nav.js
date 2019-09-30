@@ -3,34 +3,11 @@ function changeNav() {
     element.classList.toggle("show");
 }
 
-var menu = document.querySelector(".hideHome"),
-    drawer = document.querySelector(".hide-div");
-    menu.addEventListener('click', function(e){
-    drawer.classList.toggle('show');
- });
- var menu = document.querySelector(".hideAbout"),
-    drawer = document.querySelector(".hide-div");
-    menu.addEventListener('click', function(e){
-    drawer.classList.toggle('show');
- });
- var menu = document.querySelector(".hideServices"),
-    drawer = document.querySelector(".hide-div");
-    menu.addEventListener('click', function(e){
-    drawer.classList.toggle('show');
- });
+document.querySelectorAll('.hideNav').forEach (item => {
+   item.addEventListener('click', turnOfNav);
+});
 
- var menu = document.querySelector(".hideWork"),
-    drawer = document.querySelector(".hide-div");
-    menu.addEventListener('click', function(e){
-    drawer.classList.toggle('show');
- });
- var menu = document.querySelector(".hideBlogs"),
-    drawer = document.querySelector(".hide-div");
-    menu.addEventListener('click', function(e){
-    drawer.classList.toggle('show');
- });
- var menu = document.querySelector(".hideContacts"),
-    drawer = document.querySelector(".hide-div");
-    menu.addEventListener('click', function(e){
-    drawer.classList.toggle('show');
- });
+function turnOfNav() {
+   document.getElementById('changetoDiv').classList.remove('show');
+}
+
